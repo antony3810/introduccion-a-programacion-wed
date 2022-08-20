@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    input+span{padding-right: 30px;
+    }
+    input:invalid + span::after{
+        position: absolute;
+        content: "x";
+        padding-left: 5px;
+    }
+    
+    </style>
+</head>
+<body>
+    <form action="" method="get">
+        <label for="inpt-time"></label>
+    <input type="time" name="lbl-time" id="lbl-time"min="01:00" max="12:00">
+    <samp>id="spsnito"></samp>
+</form>
+</body>
+</html>

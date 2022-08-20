@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background-color: red;
+            height: 600px;
+            width: 600px;
+        }
+
+        p {
+            background-color: blue;
+            color: white;
+        }
+
+        .center-parent {
+            position: relative;
+        }
+
+        .center {
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="center-parent">
+        <p class="center">
+            Linea 1
+            <br>
+            Linea 2
+            <br>
+            Linea 3
+        </p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            text-decoration-line: overline;
+            /* Default None */
+            text-decoration-style: wavy;
+            /* Default Solid */
+            text-decoration-color: red;
+            /* Default CurrentColor */
+            text-decoration-thickness: from-font;
+            /* Default Auto */
+            text-decoration: overline wavy red;
+            /* ShortHand o abreviacion */
+        }
+
+        a {
+            text-decoration-line: none;
+            text-decoration-color: blue;
+            color: red;
+            /* 
+            Text-Decoration-line y text-decoration son heredables
+            Si se hereda un estilo de linea de un elemento padre, no se puede reemplazar en un hijo
+            */
+        }
+
+        a:link {
+            color: deeppink;
+        }
+
+        a:visited {
+            color: coral;
+            /* 
+            Tanto Visited como Link deberian ser del mismo color para mantener 
+            un orden visual durante la nevegacion del usuario 
+            */
+        }
+
+        a:hover {
+            text-shadow: 0px 0px 5px white;
+            background-color: lightsteelblue;
+            color: black;
+            border-radius: 5px;
+            padding: 3px;
+            text-transform: uppercase;
+        }
+
+        a:active {
+            text-shadow: 0px 0px 5px black;
+            background-color: rgb(42, 47, 54);
+            color: white;
+        }
+        p a {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        <a href="#">Link con decoracion azul?</a>
+    </p>
+    <a href="#">Link que <b>no</b> hereda estilos</a>
+</body>
+
+</html>

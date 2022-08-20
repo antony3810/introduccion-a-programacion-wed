@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="validacion.js" method="get">
+    <fieldset>
+       <legend>calce 7</legend>
+        <label for="usuario">Usuario</label>
+        <input type="text" name="usuario" id="usuario" placeholder="nombre de usuario">
+        <br>
+        <label for="contraseña">Contraseña</label>
+        <input type="password" name="contraseña" id="contraseña" placeholder="ej: Abc123" required maxlength="16" minlength="8">
+        <br>
+        <label for="">Recordar Contraseña</label>
+        <input type="checkbox" name="" id="">
+        <br>
+        <lebel for="email">email</lebel>
+        <input type="email" name="email" id="email" placeholder="abc@.gmail.com" required>
+        <br>
+        <label for="edad">edad</label>
+        <input type="number" name="edad" id="edad" min="1" max="120">
+        <br>
+        <botton type="submit">enviar</botton>
+        <input type="reset" value="resrt">
+        <br>
+        <input type="radio" name="radio" id="radio1" value="opcion1" checked>
+        <label for="radio1">radio 1</label>
+        <input type="radio" name="radio" id="radio2" value="opcion1">
+        <label for="radio2">radio 2</label>
+        <br>
+        <input type="range" name="range" id="range" min="0" max="100" value="20">
+        <br>
+        <input type="color" name="color" id="color">
+        <br>
+        <input type="date" name="inpt-fecha" id="inpt-fecha" value="2022-12-01" max="2099-08-12" min="2020-08-12">
+        <br>
+        <input type="time" name="time" id="time" min="00:00" max="23:59">
+        <br>
+        <input type="file" id="file" id="file" accept="image/jpeg">
+        <br>
+        </fieldset>
+        </form>
+</body>
+</html>
